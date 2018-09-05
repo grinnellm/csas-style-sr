@@ -1,4 +1,4 @@
 \section*{Appendix}\label{appMinor}
 
-We do not conduct a formal analysis of stock trend information for the \fishName{} minor stocks [?minor stocks].
-However, we provide timeseries of catch and spawn index (Figures ?? and ??, respectively).
+We do not conduct a formal analysis of stock trend information for the \fishName{} minor stocks.
+However, we provide timeseries of catch and spawn index.
