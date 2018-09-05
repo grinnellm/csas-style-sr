@@ -1,0 +1,9 @@
+\section*{Approved by}
+
+\begin{center}
+Carmel Lowe\\
+Regional Director\\
+Science Branch, Pacific Region\\
+Fisheries and Oceans Canada\\
+\rdMonth{} \rdDay{}, \rdYear{}\\
+\end{center}

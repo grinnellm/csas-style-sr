@@ -1,0 +1,20 @@
+\section*{Contributors}
+
+% Contributors of this report are identified in \autoref{tabContrib}.
+
+% \begin{table}[h]
+\begin{center}
+% \caption{Contributors of this report.}
+\begin{tabular}{ll}
+\toprule
+Contributor & Affiliation \\
+\midrule
+Jaclyn Cleary & DFO Science, Pacific Region \\
+Matthew Grinnell & DFO Science, Pacific Region \\
+Chris Grandin & DFO Science, Pacific Region \\
+% Lesley MacDougall & CSAP \\
+\bottomrule
+\end{tabular}
+% \label{tabContrib}
+\end{center}
+% \end{table}

@@ -1,0 +1,96 @@
+% Document setup
+\documentclass[11pt]{book}
+
+% Location of the csas-style repository: adjust path as needed
+\newcommand{\locRepo}{.}
+
+% Use the style file in the csas-style repository (sr.sty)
+\usepackage{\locRepo/sr}
+
+% Bibliography style file
+\bibliographystyle{../csas-style/res-doc}
+
+% Headers and footers
+% \lhead{Draft working paper --- Do not cite or circulate}
+\lhead{}
+\rhead{}
+
+%%%% Commands for title page etc %%%%%
+
+% Publication year
+\newcommand{\rdYear}{2018}
+
+% Publication month
+\newcommand{\rdMonth}{October}
+
+% Approval day
+\newcommand{\rdDay}{5}
+
+% Report number
+\newcommand{\rdNumber}{nnn}
+
+% Region
+\newcommand{\rdRegion}{Pacific Region}
+
+% Title
+\newcommand{\rdTitle}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
+
+% Title short
+\newcommand{\rdTitleShort}{\fishName{}}
+
+%%%% End of title page commands %%%%%
+
+% Let it begin
+\begin{document}
+
+%%%% First page %%%%%
+
+\thispagestyle{firstPage}
+
+<<setup, warning=FALSE, echo=FALSE, message=FALSE>>=
+# Required package(s)
+library( knitr )
+library( xtable )
+library( tidyverse )
+@
+
+% More custom variables
+<<variables, child='variables.rnw'>>=
+@
+
+% Make the title
+\vspace*{1.75cm}
+\begin{center}
+\Large{\textbf{\MakeTextUppercase{\rdTitle{}}}}
+\vspace{-0.5cm}
+\end{center}
+
+<<context, child='maindoc/1_context.rnw'>>=
+@
+
+<<background, child='maindoc/2_background.rnw'>>=
+@
+
+<<analysis, child='maindoc/3_analysis.rnw'>>=
+@
+
+<<conclusions, child='maindoc/4_conclusions.rnw'>>=
+@
+
+<<contributors, child='maindoc/5_contributors.rnw'>>=
+@
+
+<<approved, child='maindoc/6_approved.rnw'>>=
+@
+
+% References: adjust paths as needed
+\bibliography{../csas-style/example}
+
+<<appendix, child='maindoc/7_appendix.rnw'>>=
+@
+
+<<available, child='maindoc/8_available.rnw'>>=
+@
+
+% Fin
+\end{document}

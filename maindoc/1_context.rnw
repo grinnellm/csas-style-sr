@@ -1,0 +1,7 @@
+\section*{Context}
+
+This is a citation \citep{ricker1954}.
+
+% Mandatory last paragraph in this section
+This Science Response Report results from the Science Response Process [meeting date and title (e.g., of February 2011 on the Review of the Sydney tar ponds marine environmental effects monitoring program results with consideration to Sydney Harbour dredging)].  
+Additional publications from this meeting will be posted on the DFO Science Advisory Schedule as they become available.

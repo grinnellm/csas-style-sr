@@ -1,0 +1,6 @@
+% Variables
+\newcommand{\fishName}{Pacific Herring}
+\newcommand{\scienceName}{\emph{Clupea pallasii}}
+\newcommand{\assessYr}{2018}
+\newcommand{\forecastYr}{2019}
+

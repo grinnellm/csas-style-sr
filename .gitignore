@@ -1,0 +1,15 @@
+*~
+*.log
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.ps
+*.upa
+*.upb
+*.pdf
+*.tex
+*.toc
+*.png
+.Rproj.user
+*.gz
