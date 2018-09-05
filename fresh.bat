@@ -1,6 +1,6 @@
 # Clean up the directory after a LaTeX build. Windows version
 del example.pdf
-del *.log
+del example.log
 del example.aux
 del example.bbl
 del example.tex
