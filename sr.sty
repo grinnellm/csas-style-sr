@@ -286,7 +286,7 @@
 %% Changes the name of the bibliography.
 \renewcommand{\bibname}{Sources of information}
 %% To make REFERENCES a section
-\renewcommand{\bibsection}{\section*{\bibname}}
+\renewcommand{\bibsection}{\section{\bibname}}
 
 %% Makes figures stick to the top of the page. i.e. if there is a single figure
 %%  on a page, it will be placed in the center. This forces it to stick
@@ -416,6 +416,7 @@
 %% ------------------------------------------------------------------------------
 %% Defines the header and footer rules for a CSAS paper.
 \pagestyle{fancy}
+\fancyhf{}
 \renewcommand{\footrulewidth}{0.4pt}
 \renewcommand{\headrulewidth}{0.4pt}
 \fancyhead[C]{\textbf{\rdRegion{}} \hfill \textbf{Science Response: \rdTitleShort{}}}
@@ -537,6 +538,8 @@
 \usepackage{xcolor,soul}
 \usepackage{pdfcomment}
 
+% Sections without numbers
+\setcounter{secnumdepth}{0}
 
 %% Allows the french abstract to be pasted in with special characters intact
 %% Make sure maindoc.rnw is saved in utf8 encoding.
