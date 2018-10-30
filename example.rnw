@@ -47,8 +47,6 @@
 
 %%%% First page %%%%%
 
-\thispagestyle{firstPage}
-
 <<setup, warning=FALSE, echo=FALSE, message=FALSE>>=
 # Required package(s)
 library( knitr )
@@ -60,12 +58,8 @@ library( tidyverse )
 <<variables, child='variables.rnw'>>=
 @
 
-% Make the title
-\vspace*{1.75cm}
-\begin{center}
-\Large{\textbf{\MakeTextUppercase{\rdTitle{}}}}
-\vspace{-0.5cm}
-\end{center}
+% Start the first page
+\MakeFirstPage
 
 <<context, child='maindoc/1_context.rnw'>>=
 @
