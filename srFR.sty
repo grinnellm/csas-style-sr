@@ -59,6 +59,7 @@
 %% ------------------------------------------------------------------------------
 %% Use the tablefootnote package
 %\usepackage{tablefootnote}
+%% ------------------------------------------------------------------------------
 %% Use the resDoc.bst file for bibliography style.
 \usepackage{natbib}
 %% ------------------------------------------------------------------------------
@@ -286,7 +287,7 @@
 }
 
 %% Changes the name of the bibliography.
-\renewcommand{\bibname}{Sources of information}
+\renewcommand{\bibname}{Sources de renseignements}
 %% To make REFERENCES a section
 \renewcommand{\bibsection}{\section{\bibname}}
 
@@ -421,7 +422,7 @@
 \fancyhf{}
 \renewcommand{\footrulewidth}{0.4pt}
 \renewcommand{\headrulewidth}{0.4pt}
-\fancyhead[C]{\textbf{\rdRegion{}} \hfill \textbf{Science Response: \rdTitleShort{}}}
+\fancyhead[C]{\textbf{\rdRegion{}} \hfill \textbf{R\'{e}ponse des sciences: \rdTitleShort{}}}
 \fancyfoot[C]{\thepage}
 \fancypagestyle{csapfancy}{%%
   %% \fancyhead[L]{}%%{DRAFT -- Non-citable working paper}
@@ -605,11 +606,11 @@
 \fancypagestyle{firstPage}{%
     \fancyhf{}
     \fancyhead{}
-    \lhead{\includegraphics[width=9.2cm]{\locRepo/images/title-header.png}\\
+    \lhead{\includegraphics[width=9.2cm]{\locRepo/images/title-header-FR.png}\\
     \vspace{0.6cm}
     \textbf{\rdRegion}}
-    \rhead{\textbf{Canadian Science Advisory Secretariat}\\
-    \textbf{Science Response \rdYear{}/\rdNumber{}}}
+    \rhead{\textbf{Secr\'{e}tariat canadien de consultation scientifique}\\
+    \textbf{R\'{e}ponse des Sciences \rdYear{}/\rdNumber{}}}
     \lfoot{\rdMonth{} \rdYear{}}
     \rfoot{\includegraphics[width=3.54cm]{\locRepo/images/title-footer.png}}
 }
