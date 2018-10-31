@@ -1,6 +1,6 @@
 \section{Figures}
 
-Optional section: figures can go in the main body.
+Optional section: figures can go in the main body, or an appendix.
 
 % Map of BC
 \begin{figure}[H]

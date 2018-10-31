@@ -1,12 +1,11 @@
 \section{Tables}
 
-Optional section: tables can go in the main body.
+Optional section: tables can go in the main body, or an appendix.
 
 % Data input
 \begin{table}[H]
 \centering
 \caption{Input data for the \assessYr{} \fishName{} stock assessment.
-\qPeriods{}
 \spawnIndex{}}
 <<tabDataInput, echo=FALSE, message=FALSE, results='asis'>>=
 # Import the data

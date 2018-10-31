@@ -121,8 +121,8 @@ allRegionNames <- list(
 <<bibliography, child='maindoc/7_bibliography.rnw'>>=
 @
 
-% <<tables, child='maindoc/8_tables.rnw'>>=
-% @
+<<tables, child='maindoc/8_tables.rnw'>>=
+@
 
 <<figures, child='maindoc/9_figures.rnw'>>=
 @
