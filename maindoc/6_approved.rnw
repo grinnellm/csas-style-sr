@@ -1,9 +1,11 @@
-\section*{Approved by}
+\section[Approved]{Approved by}
 
+\begin{minipage}[c]{\linewidth}
 \begin{center}
 Carmel Lowe\\
 Regional Director\\
-Science Branch, Pacific Region\\
+Science Branch, \rdRegion{}\\
 Fisheries and Oceans Canada\\
-\rdMonth{} \rdDay{}, \rdYear{}\\
+\apDate{}\\
 \end{center}
+\end{minipage}

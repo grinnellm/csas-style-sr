@@ -25,8 +25,8 @@
 % Publication month
 \newcommand{\rdMonth}{October}
 
-% Approval day
-\newcommand{\rdDay}{5}
+% Approval date (default to publication year and month)
+\newcommand{\apDate}{\rdMonth{} 23, \rdYear{}}
 
 % Report number
 \newcommand{\rdNumber}{nnn}
@@ -36,6 +36,9 @@
 
 % Title
 \newcommand{\rdTitle}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
+
+% French title
+\newcommand{\rdTitleFr}{\'{E}valuation des stocks de hareng du Pacifique (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}vision pour \forecastYr{}}
 
 % Title short
 \newcommand{\rdTitleShort}{\fishName{}}
@@ -79,13 +82,19 @@ library( tidyverse )
 <<approved, child='maindoc/6_approved.rnw'>>=
 @
 
-% References: adjust paths as needed
-\bibliography{../csas-style/example}
-
-<<appendix, child='maindoc/7_appendix.rnw'>>=
+<<bibliography, child='maindoc/7_bibliography.rnw'>>=
 @
 
-<<available, child='maindoc/8_available.rnw'>>=
+<<tables, child='maindoc/8_tables.rnw'>>=
+@
+
+<<figures, child='maindoc/9_figures.rnw'>>=
+@
+
+<<available, child='maindoc/10_available.rnw'>>=
+@
+
+<<appendix, child='maindoc/11_appendix.rnw'>>=
 @
 
 % Fin

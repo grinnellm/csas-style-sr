@@ -1,6 +1,11 @@
-\section*{Analysis and response}
+\section{Analysis and response}
 
-We also present data for two minor SARs in the \hyperref[appMinor]{Appendix}.
+Mandatory section, title may vary.
 
-% Mandatory section for stock status updates; title may vary
-\subsection*{Indicators of stock status}
+\subsection{Note on this section}
+
+This section is the core of the report.
+
+\subsection{Indicators of the stock status}
+
+Mandatory section for stock status updates, title may vary.
