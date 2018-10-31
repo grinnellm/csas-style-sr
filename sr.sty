@@ -76,10 +76,12 @@
             urlcolor=blue,
             bookmarksopen=true,
             bookmarksopenlevel=1,
-			pdfusetitle,% deson't work, and not sure how to use \rdTitle either
+            pdflang=\languagename},
+			pdfusetitle,% doesn't work, and not sure how to use \rdTitle either
 			pdfsubject={DFO Science Response},
 			pdfauthor={DFO}
 			}
+
 %% ------------------------------------------------------------------------------
 
 %% ------------------------------------------------------------------------------
@@ -192,31 +194,32 @@
 
 \newcommand{\nonumsection}{\@startsection
 {section}{1}{0mm}                 %% name, level, indent
-{-3.5ex \@plus -1ex \@minus -.2ex}%% beforeskip
-{2.3ex \@plus.2ex}                %% afterskip
+{-1.5ex \@plus -0.25ex \@minus -.1ex}
+{0.5ex \@plus.1ex}
 {\centering\normalfont\Large\bfseries}}
 
 \renewcommand{\section}{\@startsection
-{section}{1}{0mm}
-{-3.5ex \@plus -1ex \@minus -.2ex}
-{2.3ex \@plus.2ex}
+{section}{2}{0mm}
+{-1.5ex \@plus -0.25ex \@minus -.1ex}
+{0.5ex \@plus.1ex}
 {\centering\normalfont\Large\bfseries}}
 
 \renewcommand{\subsection}{\@startsection
-{subsection}{2}{0mm}
-{-3.25ex plus -1ex minus  -.2ex}{1.5ex plus .2ex}
-%% {1ex}{0.1ex plus -2ex}
+{subsection}{3}{0mm}
+{-1.5ex \@plus -0.25ex \@minus -.1ex}
+{0.5ex \@plus.1ex}
 {\normalfont\large\bf}}
 
 \renewcommand{\subsubsection}{\@startsection
-{subsubsection}{3}{0mm}
-{-2ex plus -1ex minus -.2ex}{1.5ex plus .2ex}
+{subsubsection}{4}{0.63cm}
+{-1.5ex \@plus -0.25ex \@minus -.1ex}
+{0.5ex \@plus.1ex}
 {\normalfont\bf}}
 
 \renewcommand{\chapter}{\@startsection
 {chapter}{1}{0mm}
-{-3.5ex \@plus -1ex \@minus -.2ex}
-{2.3ex \@plus.2ex}
+{-1ex \@plus -0.25ex \@minus -.1ex}
+{1ex \@plus.1ex}
 {\centering\normalfont\Large\bfseries}}
 
 %% Section headings in appendices must be left-justified not centered;
@@ -426,7 +429,7 @@
 \renewcommand{\footrulewidth}{0.4pt}
 \renewcommand{\headrulewidth}{0.4pt}
 \fancyhead[C]{\textbf{\rdRegion{}} \hfill \textbf{Science Response: \rdTitleShort{}}}
-\fancyfoot[C]{\thepage}
+\fancyfoot[C]{\thepage}%Did I delete this line?
 \fancypagestyle{csapfancy}{%%
   %% \fancyhead[L]{}%%{DRAFT -- Non-citable working paper}
   %% \fancyhead[R]{}%%{CSAP WP2016zzzxx}
@@ -480,7 +483,7 @@
 \setlist[resdoclist,3]{label=\roman*.}
 \setlist[resdoclist,4]{label=\arabic*.}
 \setlist[resdoclist,5]{label=\alph*.}
-\setlist{nosep} % Remove all space between list items globally
+% \setlist{nosep} % Remove all space between list items globally
 
 %% Hanging indent of the bibliography items.
 \setlength{\bibhang}{0.25in}
@@ -520,7 +523,7 @@
 \usepackage{arydshln}
 %% So paragraphs will have a blank line between them
 \usepackage[parfill]{parskip}
-\setlength{\parskip}{12pt}
+\setlength{\parskip}{6pt}  % Note that "6 pts before and 6 pts after" a paragaph means 6 pts between paragraphs
 %% So links will anchor at figure, not caption
 \usepackage{hypcap}
 %% For two-panel plots
@@ -616,4 +619,17 @@
     \textbf{Science Response \rdYear{}/\rdNumber{}}}
     \lfoot{\rdMonth{} \rdYear{}}
     \rfoot{\includegraphics[width=3.54cm]{\locRepo/images/title-footer.png}}
+}
+
+% Generate the first page
+  \newcommand{\MakeFirstPage}{
+  % Headers and footers for the first page
+  \thispagestyle{firstPage}
+  % Make the title
+  \vspace*{1.75cm}
+  \begin{center}
+  \Large{\textbf{\MakeTextUppercase{\rdTitle{}}}}
+  % \nonumsection{\rdTitle{}}
+  \vspace{-0.2cm}
+  \end{center}
 }
