@@ -1,0 +1,4 @@
+\section{Tables}
+
+Optional section: tables can go in the main body.
+Make an example table

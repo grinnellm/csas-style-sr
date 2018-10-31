@@ -1,0 +1,12 @@
+\section[Approv\'{e}]{Approuv\'{e} par}
+
+\begin{minipage}[c]{\linewidth}
+\begin{center}
+Carmel Lowe\\
+Directrice r\'{e}gional\\
+Direction des Sciences, \rdRegion{}\\
+P\^{e}ches et Oc\'{e}ans Canada\\
+\apDate{}\\
+\end{center}
+\end{minipage}
+

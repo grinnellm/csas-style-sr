@@ -1,0 +1,10 @@
+\section{Appendice}\label{appMinor}
+
+Optional.
+
+\subsection{Note on this section}
+
+This section may include figures and tables (with captions) or any other relevant information (e.g., list of experts consulted).
+Figures and tables can also be integrated within the main text of the ``Analysis and Response'' section.
+All appendices must be formatted using styles.
+Tables and figures should also have captions.

@@ -1,0 +1,32 @@
+\section{Collaborateurs}
+
+Mandatory section and title.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Nom} & \textbf{Affiliation} \\
+\midrule
+Jaclyn Cleary & DFO Science, Pacific Region \\
+Matthew Grinnell & DFO Science, Pacific Region \\
+Allen Kronlund & DFO Science, National Capital Region \\
+Chris Grandin & DFO Science, Pacific Region \\
+Herring Technical Working Group & Various (contributions to First Nations observations) \\
+Roger Kanno & DFO Fisheries Management, Pacific Region (reviewer) \\
+Lesley MacDougall & DFO Centre for Science Advice, Pacific Region (editor) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Note on this section}
+
+Contributors of the report (with their affiliation) must be identified.
+All participants (including reviewers, CSAP) are considered contributors.
+
+\subsubsection{Suggested format}
+
+Table by name and affiliation.
+If the list of experts is lengthy, the table can be included in the appendices and referenced here.
+If the list is short, a bulleted list is also acceptable.
+

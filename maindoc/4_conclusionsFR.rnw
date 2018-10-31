@@ -1,0 +1,11 @@
+\section{Conclusions}
+
+Mandatory section and title.
+
+\subsection{Note on this section}
+
+This section is mandatory for all reports.
+It gives the opportunity to highlight the key conclusions and recommendations with the necessary explanations and rationales.
+As an example, for reviews of Environmental Impact studies, this section would include an overview of the Science comments.
+The Conclusions section must also be used to highlight the uncertainties related to the recommendations/views that are formulated and the need to conduct further analysis/peer review in the future.
+This point is particularly important when a Science Response process was conducted because the deadline to provide the answer was too short for proceeding with the necessary preparatory work and peer review.

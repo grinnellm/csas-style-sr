@@ -1,0 +1,38 @@
+\newpage
+
+\section*{Le pr\'{e}sent rapport est disponible aupr\`{e}s du :}
+
+\begin{center}
+Centre des avis scientifiques (CAS)\\
+R\'{e}gion du Pacifique\\
+P\^{e}ches et Oc\'{e}ans Canada\\
+3190 Hammond Bay Road\\
+Nanaimo, BC V9T 6N7\\
+\vspace{0.1cm}
+Telephone: (506) 851-6253\\
+E-Mail: \href{mailto:csap@dfo-mpo.gc.ca}{csap@dfo-mpo.gc.ca}\\
+Internet address: \href{http://www.dfo-mpo.gc.ca/csas-sccs/}{www.dfo-mpo.gc.ca/csas-sccs/}\\
+\vspace{0.1cm}
+ISSN 1919-3769\\
+\copyright{} Sa Majest\'{e} la Reine du chef du Canada, \rdYear{}\\
+\vspace{0.2cm}
+\includegraphics[scale=0.96]{\locRepo/images/recycle.png}
+\end{center}
+
+La pr\'{e}sente publication doit \^{e}tre cit\'{e}e comme suit:
+
+\hangindent=0.6cm
+MPO. \rdYear{}. \rdTitle{}.
+Secr.\ can.\ de consult.\ sci.\ du MPO, R\'{e}p.\ des Sci.\
+\rdYear{}/\rdNumber{}.
+
+
+\emph{Also available in English:}
+
+\hangindent=0.6cm
+\emph{
+DFO. \rdYear{}. \rdTitleEN{}.
+DFO Can.\ Sci.\ Advis.\ Sec.\ Sci.\ Resp.
+\rdYear{}/\rdNumber{}.
+}
+

@@ -1,0 +1,101 @@
+% TODO: Add example figures and tables.
+
+% Document setup
+\documentclass[11pt]{book}
+
+% Location of the csas-style repository: adjust path as needed
+\newcommand{\locRepo}{.}
+
+% Use the style file in the csas-style repository (srFR.sty)
+\usepackage{\locRepo/srFR}
+
+% Bibliography style file
+\bibliographystyle{../csas-style/res-doc}
+
+% Headers and footers
+% \lhead{Draft working paper --- Do not cite or circulate}
+\lhead{}
+\rhead{}
+
+%%%% Commands for title page etc %%%%%
+
+% Publication year
+\newcommand{\rdYear}{2018}
+
+% Publication month
+\newcommand{\rdMonth}{Octobre}
+
+% Approval date (default to publication year and month)
+\newcommand{\apDate}{\rdMonth{} 23, \rdYear{}}
+
+% Report number
+\newcommand{\rdNumber}{nnn}
+
+% Region
+\newcommand{\rdRegion}{R\'{e}gion du Pacifique}
+
+% Title
+\newcommand{\rdTitle}{\'{E}valuation des stocks de hareng du Pacifique (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}vision pour \forecastYr{}}
+
+% English title
+\newcommand{\rdTitleEN}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
+
+% Title short
+\newcommand{\rdTitleShort}{\fishName{}}
+
+%%%% End of title page commands %%%%%
+
+% Let it begin
+\begin{document}
+
+%%%% First page %%%%%
+
+<<setup, warning=FALSE, echo=FALSE, message=FALSE>>=
+# Required package(s)
+library( knitr )
+library( xtable )
+library( tidyverse )
+@
+
+% More custom variables
+<<variables, child='variables.rnw'>>=
+@
+
+% Start the first page
+\MakeFirstPage
+
+<<context, child='maindoc/1_contextFR.rnw'>>=
+@
+
+<<background, child='maindoc/2_backgroundFR.rnw'>>=
+@
+
+<<analysis, child='maindoc/3_analysisFR.rnw'>>=
+@
+
+<<conclusions, child='maindoc/4_conclusionsFR.rnw'>>=
+@
+
+<<contributors, child='maindoc/5_contributorsFR.rnw'>>=
+@
+
+<<approved, child='maindoc/6_approvedFR.rnw'>>=
+@
+
+<<bibliography, child='maindoc/7_bibliographyFR.rnw'>>=
+@
+
+<<tables, child='maindoc/8_tablesFR.rnw'>>=
+@
+
+<<figures, child='maindoc/9_figuresFR.rnw'>>=
+@
+
+<<available, child='maindoc/10_availableFR.rnw'>>=
+@
+
+<<appendix, child='maindoc/11_appendixFR.rnw'>>=
+@
+
+% Fin
+\end{document}
