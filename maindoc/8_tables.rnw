@@ -1,4 +1,20 @@
 \section{Tables}
 
-Optional section: tables can go in the main body.
-Make an example table
+Optional section: tables can go in the main body, or an appendix.
+
+% Data input
+\begin{table}[H]
+\centering
+\caption{Input data for the \assessYr{} \fishName{} stock assessment.
+\spawnIndex{}}
+<<tabDataInput, echo=FALSE, message=FALSE, results='asis'>>=
+# Import the data
+inputData <- read_csv( file="tables/InputData.csv", col_names=TRUE )
+# Format the table for latex
+xInputData <- inputData %>%
+  xtable( align=rep("l", times=ncol(inputData)+1) ) %>%
+  print( booktabs=TRUE, floating=FALSE, include.rownames=FALSE,
+    sanitize.colnames.function=Bold2 )
+@
+\label{tabDataInput}
+\end{table}

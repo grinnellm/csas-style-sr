@@ -22,12 +22,13 @@ This section will be posted in HTML format on the CSAS website followed by the l
 [The meeting date and title must be exactly as they appear on the Fisheries and Oceans Science Advisory Schedule.
 Be sure to use the default text in the French template for the translation as well as the meeting information on the French version of the schedule.]
 
-This Science Response Report results from the Science Response Process [meeting date and title (e.g., of February 2011 on the Review of the Sydney tar ponds marine environmental effects monitoring program results with consideration to Sydney Harbour dredging].
+This Science Response Report results from the Science Response Process [meeting date and title (e.g., of \rdMonth{} \rdYear{} on the \rdTitle{})].
 
 [Add the following sentence if there are other associated publications that will be posted on the schedule.]
 
 Additional publications from this meeting will be posted on the DFO Science Advisory Schedule as they become available.
 
-\subsubsection{Example citation}
+\subsubsection{Example citation and cross-references}
 
 This is a stock assessment \citep{ricker1954}.
+This is our data (\autoref{tabDataInput}), and this is our area (\autoref{figBC}).

@@ -4,3 +4,4 @@
 \newcommand{\assessYr}{2018}
 \newcommand{\forecastYr}{2019}
 
+\newcommand{\spawnIndex}{The `spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, $q$.}
