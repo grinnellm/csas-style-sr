@@ -4,7 +4,7 @@
 
 \begin{center}
 Centre for Science Advice\\
-Pacific Region\\
+\rdRegion{}\\
 Fisheries and Oceans Canada\\
 3190 Hammond Bay Road\\
 Nanaimo, BC V9T 6N7\\

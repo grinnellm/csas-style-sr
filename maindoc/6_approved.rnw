@@ -2,8 +2,7 @@
 
 \begin{minipage}[c]{\linewidth}
 \begin{center}
-Carmel Lowe\\
-Regional Director\\
+\approver{}\\
 Science Branch, \rdRegion{}\\
 Fisheries and Oceans Canada\\
 \apDate{}\\

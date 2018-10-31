@@ -28,6 +28,9 @@
 % Approval date (default to publication year and month)
 \newcommand{\apDate}{\rdMonth{} 23, \rdYear{}}
 
+% Approver (name\\position)
+\newcommand{\approver}{Carmel Lowe\\Regional Director}
+
 % Report number
 \newcommand{\rdNumber}{nnn}
 
