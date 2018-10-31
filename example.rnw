@@ -37,6 +37,15 @@
 % Region
 \newcommand{\rdRegion}{Pacific Region}
 
+% Address
+\newcommand{\rdAddress}{Fisheries and Oceans Canada\\3190 Hammond Bay Road\\Nanaimo, BC V9T 6N7}
+
+% Phone
+\newcommand{\rdPhone}{(250) 756-7208}
+
+% Email
+\newcommand{\rdEmail}{csap@dfo-mpo.gc.ca}
+
 % Title
 \newcommand{\rdTitle}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
 
@@ -118,8 +127,8 @@ allRegionNames <- list(
 <<contributors, child='maindoc/5_contributors.rnw'>>=
 @
 
-<<approved, child='maindoc/6_approved.rnw'>>=
-@
+% Generate the approval section
+\MakeApproval
 
 <<bibliography, child='maindoc/7_bibliography.rnw'>>=
 @
@@ -130,8 +139,8 @@ allRegionNames <- list(
 <<figures, child='maindoc/9_figures.rnw'>>=
 @
 
-<<available, child='maindoc/10_available.rnw'>>=
-@
+% Generate the availability section
+\MakeAvailable
 
 <<appendix, child='maindoc/11_appendix.rnw'>>=
 @

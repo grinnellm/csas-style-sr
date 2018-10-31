@@ -616,7 +616,7 @@
 }
 
 % Generate the first page
-  \newcommand{\MakeFirstPage}{
+\newcommand{\MakeFirstPage}{
   % Headers and footers for the first page
   \thispagestyle{firstPage}
   % Make the title
@@ -626,4 +626,56 @@
   % \nonumsection{\rdTitle{}}
   \vspace{-0.2cm}
   \end{center}
+}
+
+% Generate the approval
+\newcommand{\MakeApproval}{
+  \section[Approved]{Approved by}
+  \begin{minipage}[c]{\linewidth}
+  \begin{center}
+  \approver{}\\
+  Science Branch, \rdRegion{}\\
+  Fisheries and Oceans Canada\\
+  \apDate{}\\
+  \end{center}
+  \end{minipage}
+}
+
+% Generate the availability
+\newcommand{\MakeAvailable}{
+
+\newpage
+
+\section[Available]{This report is available from the}
+
+\begin{center}
+Centre for Science Advice\\
+\rdRegion{}\\
+\rdAddress{}\\
+\vspace{0.1cm}
+Telephone: \rdPhone{}\\
+E-Mail: \href{mailto:\rdEmail{}}{\rdEmail{}}\\
+Internet address: \href{http://www.dfo-mpo.gc.ca/csas-sccs/}{www.dfo-mpo.gc.ca/csas-sccs/}\\
+\vspace{0.1cm}
+ISSN 1919-3769\\
+\copyright{} Her Majesty the Queen in Right of Canada, \rdYear{}\\
+\vspace{0.2cm}
+\includegraphics[scale=0.96]{\locRepo/images/recycle.png}
+\end{center}
+
+Correct citation for this publication:
+
+\hangindent=0.6cm
+DFO. \rdYear{}. \rdTitle{}.
+DFO Can.\ Sci.\ Advis.\ Sec.\ Sci.\ Resp.
+\rdYear{}/\rdNumber{}.
+
+\emph{Aussi disponible en fran\c{c}ais:}
+
+\hangindent=0.6cm
+\emph{MPO. \rdYear{}. \rdTitleFr{}.
+Secr.\ can.\ de consult.\ sci.\ du MPO, R\'{e}p.\ des Sci.\
+\rdYear{}/\rdNumber{}.}
+
+\newpage
 }
