@@ -1,0 +1,5 @@
+\section{Figures}
+
+Optional section: figures can go in the main body.
+Make an example figure.
+
