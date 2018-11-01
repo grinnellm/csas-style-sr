@@ -28,7 +28,13 @@ This Science Response Report results from the Science Response Process [meeting 
 
 Additional publications from this meeting will be posted on the DFO Science Advisory Schedule as they become available.
 
-\subsubsection{Example citation and cross-references}
+\subsubsection{Example citation, cross-references, and list}
 
 This is a stock assessment \citep{ricker1954}.
-This is our data (\autoref{tabDataInput}), and this is our area (\autoref{figBC}).
+This is our input data (\autoref{tabDataInput}), and this is our study area (\autoref{figBC}).
+These are some important items:
+\begin{resdoclist}
+\item First item,
+\item Second item, and
+\item Third item.
+\end{resdoclist}
