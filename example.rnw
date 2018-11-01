@@ -1,5 +1,3 @@
-% TODO: Add example figures and tables.
-
 % Document setup
 \documentclass[11pt]{book}
 
@@ -11,11 +9,6 @@
 
 % Bibliography style file
 \bibliographystyle{../csas-style/res-doc}
-
-% Headers and footers
-% \lhead{Draft working paper --- Do not cite or circulate}
-\lhead{}
-\rhead{}
 
 %%%% Commands for title page etc %%%%%
 
