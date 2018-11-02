@@ -79,9 +79,8 @@
             pdflang=\languagename,
 			pdfusetitle,% doesn't work, and not sure how to use \rdTitle either
 			pdfsubject={DFO Science Response},
-			pdfauthor={DFO}
+			pdfauthor={DFO-CSAS}
 			}
-
 %% ------------------------------------------------------------------------------
 
 %% ------------------------------------------------------------------------------
@@ -614,7 +613,11 @@
     \fancyhead{}
     \lhead{\includegraphics[width=9.2cm]{\locRepo/images/title-header.png}\\
     \vspace{0.6cm}
+<<<<<<< HEAD
     \textbf{\rdRegion}}
+=======
+    \textbf{\rdRegion{}}}
+>>>>>>> 83ab42a8819bdba257c47fa531051a9f8c06f305
     \rhead{\textbf{Canadian Science Advisory Secretariat}\\
     \textbf{Science Response \rdYear{}/\rdNumber{}}}
     \lfoot{\rdMonth{} \rdYear{}}
@@ -622,14 +625,65 @@
 }
 
 % Generate the first page
-  \newcommand{\MakeFirstPage}{
+\newcommand{\MakeFirstPage}{
   % Headers and footers for the first page
   \thispagestyle{firstPage}
   % Make the title
   \vspace*{1.75cm}
   \begin{center}
   \Large{\textbf{\MakeTextUppercase{\rdTitle{}}}}
-  % \nonumsection{\rdTitle{}}
   \vspace{-0.2cm}
   \end{center}
+}
+
+% Generate the approval
+\newcommand{\MakeApproval}{
+  \section[Approved]{Approved by}
+  \begin{minipage}[c]{\linewidth}
+  \begin{center}
+  \rdApp{}\\
+  Science Branch, \rdRegion{}\\
+  Fisheries and Oceans Canada\\
+  \rdAppDate{}\\
+  \end{center}
+  \end{minipage}
+}
+
+% Generate the availability
+\newcommand{\MakeAvailable}{
+
+\newpage
+
+\section[Available]{This report is available from the}
+
+\begin{center}
+Centre for Science Advice\\
+\rdRegion{}\\
+\rdAddress{}\\
+\vspace{0.1cm}
+Telephone: \rdPhone{}\\
+E-Mail: \href{mailto:\rdEmail}{\rdEmail}\\
+Internet address: \href{http://www.dfo-mpo.gc.ca/csas-sccs/}{www.dfo-mpo.gc.ca/csas-sccs/}\\
+\vspace{0.1cm}
+ISSN 1919-3769\\
+\copyright{} Her Majesty the Queen in Right of Canada, \rdYear{}\\
+\vspace{0.2cm}
+\includegraphics[scale=0.96]{\locRepo/images/recycle.png}
+\end{center}
+
+Correct citation for this publication:
+
+\hangindent=0.6cm
+DFO. \rdYear{}. \rdTitle{}.
+DFO Can.\ Sci.\ Advis.\ Sec.\ Sci.\ Resp.
+\rdYear{}/\rdNumber{}.
+
+\emph{Aussi disponible en fran\c{c}ais:}
+
+\hangindent=0.6cm
+\emph{MPO. \rdYear{}. \rdTitleFr{}.
+Secr.\ can.\ de consult.\ sci.\ du MPO, R\'{e}p.\ des Sci.\
+\rdYear{}/\rdNumber{}.}
+
+\newpage
 }
