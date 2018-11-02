@@ -1,0 +1,22 @@
+\section{Tables}
+
+Section optionnelle: les tables apparaissent habituellement dans le texte principal, ou dans l'appendice.
+
+Exemple d'une table.
+
+% Data input
+\begin{table}[H]
+\centering
+\caption{Donn\'{e}es utilis\'{e}es pour l' \'{e}valuation \assessYr{} du \fishNameFr{}.
+\spawnIndexFr{}}
+<<tabDataInput, echo=FALSE, message=FALSE, results='asis'>>=
+# Import the data
+inputData <- read_csv( file="tables/InputDataFR.csv", col_names=TRUE )
+# Format the table for latex
+xInputData <- inputData %>%
+  xtable( align=rep("l", times=ncol(inputData)+1) ) %>%
+  print( booktabs=TRUE, floating=FALSE, include.rownames=FALSE,
+    sanitize.colnames.function=Bold2 )
+@
+\label{tabDataInput}
+\end{table}

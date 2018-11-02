@@ -1,0 +1,5 @@
+\section{Figures}
+
+Section optionnelle: les figures apparaissent habituellement dans le texte principal
+Exemple d'une figure.
+

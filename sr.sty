@@ -57,6 +57,8 @@
 %% ------------------------------------------------------------------------------
 
 %% ------------------------------------------------------------------------------
+%% Use the tablefootnote package
+%\usepackage{tablefootnote}
 %% Use the resDoc.bst file for bibliography style.
 \usepackage{natbib}
 %% ------------------------------------------------------------------------------
@@ -75,7 +77,10 @@
             bookmarksopen=true,
             bookmarksopenlevel=1,
             pdflang=\languagename,
-            pdfauthor={DFO-CSAS}}
+			pdfusetitle,% doesn't work, and not sure how to use \rdTitle either
+			pdfsubject={DFO Science Response},
+			pdfauthor={DFO-CSAS}
+			}
 %% ------------------------------------------------------------------------------
 
 %% ------------------------------------------------------------------------------

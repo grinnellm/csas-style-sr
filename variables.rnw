@@ -1,7 +1,10 @@
 % Variables
 \newcommand{\fishName}{Pacific Herring}
+\newcommand{\fishNameFr}{Hareng du Pacifique}
 \newcommand{\scienceName}{\emph{Clupea pallasii}}
 \newcommand{\assessYr}{2018}
 \newcommand{\forecastYr}{2019}
 
 \newcommand{\spawnIndex}{The `spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, $q$.}
+
+\newcommand{\spawnIndexFr}{L'indice de reproduction représente les donn\'{e}es de relev\'{e} brutes seulement, et ne sont pas ajust\'{e}es par le param\`{e}tre d'ajustement de l'indice de reproduction, $q$.}

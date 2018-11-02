@@ -1,0 +1,7 @@
+\section{Conclusions}
+
+Section et titre obligatoires
+
+\subsection{Notes sur cette section}
+
+Cette section est obligatoire pour tous les rapports. Elle présente les principales conclusions ainsi que les recommandations, avec les explications et les justifications nécessaires. À titre d’exemple, cette section donnerait une vue d’ensemble des commentaires formulés par les scientifiques dans le cas de l'examen d’études sur les répercussions écologiques. La section Conclusions doit également être utilisée pour mettre en relief les incertitudes liées aux recommandations/points de vue formulés ainsi que la nécessité d’effectuer ultérieurement une analyse/examen par des pairs plus approfondie. Ce point est particulièrement important lorsqu’il est question d’un processus de réponse des Sciences du fait que l’échéance prescrite pour la réponse est trop courte pour que l’on exécute les travaux préparatoires et l’examen par les pairs requis.

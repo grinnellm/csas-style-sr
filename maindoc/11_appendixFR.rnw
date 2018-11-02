@@ -1,0 +1,8 @@
+\section{Annexes}\label{appMinor}
+
+Section optionnelle.
+
+\subsection{Notes sur cette section}
+
+Cette section peut comprendre des figures et des tableaux (avec des légendes) ou toute autre information pertinente (p. ex., liste d'experts consultés). Les figures et les tableaux peuvent également être intégrés dans le texte principal de la section «analyse et réponse».
+Toutes les annexes doivent être formatées à l'aide de styles.  Les tableaux et les figures devraient aussi avoir des légendes.

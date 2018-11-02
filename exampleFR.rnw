@@ -1,11 +1,13 @@
+% TODO: Add example figures and tables.
+
 % Document setup
 \documentclass[11pt]{book}
 
 % Location of the csas-style repository: adjust path as needed
 \newcommand{\locRepo}{.}
 
-% Use the style file in the csas-style repository (sr.sty)
-\usepackage{\locRepo/sr}
+% Use the style file in the csas-style repository (srFR.sty)
+\usepackage{\locRepo/srFR}
 
 % Bibliography style file
 \bibliographystyle{../csas-style/res-doc}
@@ -16,37 +18,34 @@
 \newcommand{\rdYear}{2018}
 
 % Publication month
-\newcommand{\rdMonth}{October}
+\newcommand{\rdMonth}{Octobre}
 
 % Approval date (default to publication year and month)
 \newcommand{\rdAppDate}{\rdMonth{} 23, \rdYear{}}
-
 % Approver (name\\position)
-\newcommand{\rdApp}{Carmel Lowe\\Regional Director}
+\newcommand{\rdApp}{Carmel Lowe\\Directrice r\'{e}gionale}
 
 % Report number
 \newcommand{\rdNumber}{nnn}
 
 % Region
-\newcommand{\rdRegion}{Pacific Region}
-
+\newcommand{\rdRegion}{R\'{e}gion du Pacifique}
 % Address
-\newcommand{\rdAddress}{Fisheries and Oceans Canada\\3190 Hammond Bay Road\\Nanaimo, BC V9T 6N7}
+\newcommand{\rdAddress}{P\^{e}ches et Oc\'{e}ans Canada\\3190 Hammond Bay Road\\Nanaimo, BC V9T 6N7}
 
 % Phone
 \newcommand{\rdPhone}{(250) 756-7208}
 
 % Email
 \newcommand{\rdEmail}{csap@dfo-mpo.gc.ca}
-
 % Title
-\newcommand{\rdTitle}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
+\newcommand{\rdTitle}{\'{E}valuation des stocks de \fishNameFr{} (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}visions pour \forecastYr{}}
 
-% French title
-\newcommand{\rdTitleFr}{\'{E}valuation des stocks de hareng du Pacifique (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}visions pour \forecastYr{}}
+% English title
+\newcommand{\rdTitleEn}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
 
 % Title short
-\newcommand{\rdTitleShort}{\fishName{}}
+\newcommand{\rdTitleShort}{\fishNameFr{}}
 
 %%%% End of title page commands %%%%%
 
@@ -105,37 +104,37 @@ allRegionNames <- list(
 % Start the first page
 \MakeFirstPage
 
-<<context, child='maindoc/1_context.rnw'>>=
+<<context, child='maindoc/1_contextFR.rnw'>>=
 @
 
-<<background, child='maindoc/2_background.rnw'>>=
+<<background, child='maindoc/2_backgroundFR.rnw'>>=
 @
 
-<<analysis, child='maindoc/3_analysis.rnw'>>=
+<<analysis, child='maindoc/3_analysisFR.rnw'>>=
 @
 
-<<conclusions, child='maindoc/4_conclusions.rnw'>>=
+<<conclusions, child='maindoc/4_conclusionsFR.rnw'>>=
 @
 
-<<contributors, child='maindoc/5_contributors.rnw'>>=
+<<contributors, child='maindoc/5_contributorsFR.rnw'>>=
 @
 
 % Generate the approval section
 \MakeApproval
 
-<<bibliography, child='maindoc/7_bibliography.rnw'>>=
+<<bibliography, child='maindoc/7_bibliographyFR.rnw'>>=
 @
 
-<<tables, child='maindoc/8_tables.rnw'>>=
+<<tables, child='maindoc/8_tablesFR.rnw'>>=
 @
 
-<<figures, child='maindoc/9_figures.rnw'>>=
-@
+%<<figures, child='maindoc/9_figuresFR.rnw'>>=
+%@
 
 % Generate the availability section
 \MakeAvailable
 
-<<appendix, child='maindoc/11_appendix.rnw'>>=
+<<appendix, child='maindoc/11_appendixFR.rnw'>>=
 @
 
 % Fin

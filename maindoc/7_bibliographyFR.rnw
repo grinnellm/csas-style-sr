@@ -1,0 +1,24 @@
+% References: adjust paths as needed
+\bibliography{../csas-style/example}
+
+Section optionnelle pour les R\'{e}ponses des Sciences r\'{e}guli\`{e}res, et obligatoire pour les Mises \`{a} jour de l'\'{e}tat des stocks puisque celles-ci doivent inclure la citation \`{a} l'Avis scientifique d\'{e}coulant de la revue par les pairs.
+
+
+\subsection{Paragraphe optionnel}
+
+[La date et le titre de la r\'{e}union doivent apparaitre exactement comme ils apparaissent sur le calendrier des avis scientifiques de P\^{e}ches et Oc\'{e}ans.
+Be sure to use the default text in the French template for the translation as well as the meeting information on the French version of the schedule.]
+
+
+This Science Response Report results from the Science Response Process [meeting date and title (e.g., of February 2011 on the Review of the Sydney tar ponds marine environmental effects monitoring program results with consideration to Sydney Harbour dredging].
+
+[Add the following sentence if there are other associated publications that will be posted on the schedule.]
+
+Additional publications from this process will be posted on the DFO Science Advisory Schedule as they become available.
+
+\subsubsection{Guidance on references}
+
+References must be formatted according to the Guide for the Production of Fisheries and Oceans Canada Reports.
+References listed in the References Cited section should be publically available when the report is posted on the website.
+The only exception is for books or articles that have been accepted for publication (page proof stage or where there is an acceptance letter).
+These can be listed followed by the notation “in press”.All others should be included in the text as unpublished data.

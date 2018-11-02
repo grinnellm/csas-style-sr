@@ -17,6 +17,8 @@ If the objective of the process was to comment on a specific report (e.g., Envir
 
 This section will be posted in HTML format on the CSAS website followed by the link to the full PDF version of the publication.
 
+
+
 \subsection{Mandatory paragraph}
 
 [The meeting date and title must be exactly as they appear on the Fisheries and Oceans Science Advisory Schedule.
@@ -26,7 +28,7 @@ This Science Response Report results from the Science Response Process [meeting 
 
 [Add the following sentence if there are other associated publications that will be posted on the schedule.]
 
-Additional publications from this meeting will be posted on the DFO Science Advisory Schedule as they become available.
+Additional publications from this meeting will be posted on the \href{http://www.isdm-gdsi.gc.ca/csas-sccs/applications/events-evenements/index-eng.asp}{DFO Science Advisory Schedule} as they become available.
 
 \subsubsection{Example citation, cross-references, and list}
 
@@ -38,3 +40,5 @@ Input data has three main components:
 \item Biological data, and
 \item Abundance data.
 \end{resdoclist}
+
+

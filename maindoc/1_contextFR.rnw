@@ -1,0 +1,19 @@
+\section{Contexte}
+
+Titre et section paragraphe obligatoires.
+
+\subsection{Notes sur cette section}
+
+La présente réponse des Sciences découle du processus de réponse des Sciences [[La date et le titre de la réunion doivent apparaître exactement de la même façon qu’ils sont indiqués dans le calendrier des avis scientifiques de Pêches et Océans Canada.
+
+Toute autre publication découlant de cette réunion sera publiée, lorsqu’elle sera disponible, sur \href{http://www.isdm-gdsi.gc.ca/csas-sccs/applications/events-evenements/index-fra.asp}{le calendrier des avis scientifiques du MPO}.
+
+\subsection{Paragraphe obligatoire}
+
+
+\subsubsection{Exemple de citation}
+
+Ceci est une \'{e}valuation de stock \citep{ricker1954}.
+
+
+

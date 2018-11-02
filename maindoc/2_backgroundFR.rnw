@@ -1,0 +1,9 @@
+\section{Renseignements de base}
+
+Section Facultative
+
+\subsection{Notes sur cette section}
+Lorsque nécessaire, cette section peut être utilisée pour ajouter des renseignements qui aideront le lecteur à comprendre la nature de l’enjeu (p. ex., information clé sur l’espèce, la population ou la zone, ou encore des détails sur les fondements utilisés pour répondre à la demande). Les réponses des Sciences sont par définition brèves. Des renvois à d’autres sources de renseignements peuvent être ajoutés dans la section Sources de renseignements.
+
+\subsection{Description de la p\^{e}che}
+Section facultative pour la mise à jour de l’état d’un stock, le titre peut varier.
