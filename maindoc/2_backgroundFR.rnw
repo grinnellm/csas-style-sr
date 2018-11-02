@@ -1,12 +1,9 @@
 \section{Renseignements de base}
 
-Optional section.
+Section Facultative
 
-\subsection{Note on this section}
+\subsection{Notes sur cette section}
+Lorsque nécessaire, cette section peut être utilisée pour ajouter des renseignements qui aideront le lecteur à comprendre la nature de l’enjeu (p. ex., information clé sur l’espèce, la population ou la zone, ou encore des détails sur les fondements utilisés pour répondre à la demande). Les réponses des Sciences sont par définition brèves. Des renvois à d’autres sources de renseignements peuvent être ajoutés dans la section Sources de renseignements.
 
-This section can be used when it is considered necessary to add some background information to help the readers understand the nature of the issue to address (e.g., key information on the species, population, or area, or more details on the rationale for providing an answer to the request,).
-Science Response Reports are intended to be short. References to more background information may be added in the Sources of Information section.
-
-\subsection{Description of the fishery}
-
-Optional section for stock status updates, title may vary.
+\subsection{Description de la p\^{e}che}
+Section facultative pour la mise à jour de l’état d’un stock, le titre peut varier.

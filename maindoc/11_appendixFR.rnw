@@ -1,10 +1,8 @@
-\section{Appendice}\label{appMinor}
+\section{Annexes}\label{appMinor}
 
-Optional.
+Section optionnelle.
 
-\subsection{Note on this section}
+\subsection{Notes sur cette section}
 
-This section may include figures and tables (with captions) or any other relevant information (e.g., list of experts consulted).
-Figures and tables can also be integrated within the main text of the ``Analysis and Response'' section.
-All appendices must be formatted using styles.
-Tables and figures should also have captions.
+Cette section peut comprendre des figures et des tableaux (avec des légendes) ou toute autre information pertinente (p. ex., liste d'experts consultés). Les figures et les tableaux peuvent également être intégrés dans le texte principal de la section «analyse et réponse».
+Toutes les annexes doivent être formatées à l'aide de styles.  Les tableaux et les figures devraient aussi avoir des légendes.

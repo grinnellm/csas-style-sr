@@ -43,7 +43,7 @@
 \newcommand{\rdTitle}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
 
 % French title
-\newcommand{\rdTitleFr}{\'{E}valuation des stocks de hareng du Pacifique (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}vision pour \forecastYr{}}
+\newcommand{\rdTitleFr}{\'{E}valuation des stocks de hareng du Pacifique (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}visions pour \forecastYr{}}
 
 % Title short
 \newcommand{\rdTitleShort}{\fishName{}}

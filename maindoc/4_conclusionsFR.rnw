@@ -1,11 +1,7 @@
 \section{Conclusions}
 
-Mandatory section and title.
+Section et titre obligatoires
 
-\subsection{Note on this section}
+\subsection{Notes sur cette section}
 
-This section is mandatory for all reports.
-It gives the opportunity to highlight the key conclusions and recommendations with the necessary explanations and rationales.
-As an example, for reviews of Environmental Impact studies, this section would include an overview of the Science comments.
-The Conclusions section must also be used to highlight the uncertainties related to the recommendations/views that are formulated and the need to conduct further analysis/peer review in the future.
-This point is particularly important when a Science Response process was conducted because the deadline to provide the answer was too short for proceeding with the necessary preparatory work and peer review.
+Cette section est obligatoire pour tous les rapports. Elle présente les principales conclusions ainsi que les recommandations, avec les explications et les justifications nécessaires. À titre d’exemple, cette section donnerait une vue d’ensemble des commentaires formulés par les scientifiques dans le cas de l'examen d’études sur les répercussions écologiques. La section Conclusions doit également être utilisée pour mettre en relief les incertitudes liées aux recommandations/points de vue formulés ainsi que la nécessité d’effectuer ultérieurement une analyse/examen par des pairs plus approfondie. Ce point est particulièrement important lorsqu’il est question d’un processus de réponse des Sciences du fait que l’échéance prescrite pour la réponse est trop courte pour que l’on exécute les travaux préparatoires et l’examen par les pairs requis.

@@ -12,11 +12,6 @@
 % Bibliography style file
 \bibliographystyle{../csas-style/res-doc}
 
-% Headers and footers
-% \lhead{Draft working paper --- Do not cite or circulate}
-\lhead{}
-\rhead{}
-
 %%%% Commands for title page etc %%%%%
 
 % Publication year
@@ -26,22 +21,31 @@
 \newcommand{\rdMonth}{Octobre}
 
 % Approval date (default to publication year and month)
-\newcommand{\apDate}{\rdMonth{} 23, \rdYear{}}
+\newcommand{\rdAppDate}{\rdMonth{} 23, \rdYear{}}
+% Approver (name\\position)
+\newcommand{\rdApp}{Carmel Lowe\\Directrice r\'{e}gionale}
 
 % Report number
 \newcommand{\rdNumber}{nnn}
 
 % Region
 \newcommand{\rdRegion}{R\'{e}gion du Pacifique}
+% Address
+\newcommand{\rdAddress}{P\^{e}ches et Oc\'{e}ans Canada\\3190 Hammond Bay Road\\Nanaimo, BC V9T 6N7}
 
+% Phone
+\newcommand{\rdPhone}{(250) 756-7208}
+
+% Email
+\newcommand{\rdEmail}{csap@dfo-mpo.gc.ca}
 % Title
-\newcommand{\rdTitle}{\'{E}valuation des stocks de hareng du Pacifique (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}vision pour \forecastYr{}}
+\newcommand{\rdTitle}{\'{E}valuation des stocks de \fishNameFr{} (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}visions pour \forecastYr{}}
 
 % English title
-\newcommand{\rdTitleEN}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
+\newcommand{\rdTitleEn}{Status of \fishName{} (\scienceName{}) in \assessYr{} and forecasts for \forecastYr{}}
 
 % Title short
-\newcommand{\rdTitleShort}{\fishName{}}
+\newcommand{\rdTitleShort}{\fishNameFr{}}
 
 %%%% End of title page commands %%%%%
 
@@ -55,6 +59,42 @@
 library( knitr )
 library( xtable )
 library( tidyverse )
+library( here )
+
+# Bold and latex symbols
+Bold2 <- function(x) {paste('\\textbf{',sanitize(x, type="latex"),'}', sep ='')}
+
+# Paste strings nicely
+PasteNicely <- function( x, intChars=", ", nChar="and " ) {
+  # Get the length of the vector
+  n <- length( x )
+  # If there are more than two
+  if( n > 2 ) {
+    # Make a print-friendly vector
+    x[n] <- paste( nChar, x[n], sep="" )
+    # Get print friendly values
+    res <- paste( x, collapse=intChars )
+  } else {  # End if more than two, otherwise
+    # Add a space
+    nCharSp <- paste( " ", nChar, sep="" )
+    # Get print friendly values
+    res <- paste( x, collapse=nCharSp )
+  }  # End if not more than two
+  # Return the results
+  return( res )
+}  # End PasteNicely function
+
+# Directories
+rootd <- here::here()
+rootd.data <- file.path(rootd, "data")
+rootd.static.figs <- file.path(rootd, "maindoc", "figures")
+
+# Region names by type
+allRegionNames <- list(
+  major=c("Haida Gwaii (HG)", "Prince Rupert District (PRD)",
+    "Central Coast (CC)", "Strait of Georgia (SoG)",
+    "West Coast of Vancouver Island (WCVI)"),
+  minor=c("Area 27 (A27)", "Area 2 West (A2W)") )
 @
 
 % More custom variables
@@ -79,8 +119,8 @@ library( tidyverse )
 <<contributors, child='maindoc/5_contributorsFR.rnw'>>=
 @
 
-<<approved, child='maindoc/6_approvedFR.rnw'>>=
-@
+% Generate the approval section
+\MakeApproval
 
 <<bibliography, child='maindoc/7_bibliographyFR.rnw'>>=
 @
@@ -88,11 +128,11 @@ library( tidyverse )
 <<tables, child='maindoc/8_tablesFR.rnw'>>=
 @
 
-<<figures, child='maindoc/9_figuresFR.rnw'>>=
-@
+%<<figures, child='maindoc/9_figuresFR.rnw'>>=
+%@
 
-<<available, child='maindoc/10_availableFR.rnw'>>=
-@
+% Generate the availability section
+\MakeAvailable
 
 <<appendix, child='maindoc/11_appendixFR.rnw'>>=
 @

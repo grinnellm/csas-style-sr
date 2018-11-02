@@ -1,8 +1,15 @@
 \section{Analyse et r\'{e}ponse}
 
-Mandatory section, title may vary.
+Section obligatoire, le titre peut varier
+Cette section est le cœur du rapport.
+Indicateurs de l’état du stock
+Section obligatoire pour la mise à jour de l’état d’un stock, le titre peut varier
 
-\subsection{Note on this section}
+
+
+Section obligatoire, le titre de la section peut varier.
+
+\subsection{Notes sur cette section}
 
 This section is the core of the report.
 

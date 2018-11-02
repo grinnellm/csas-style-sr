@@ -1,6 +1,13 @@
 \section{Collaborateurs}
 
-Mandatory section and title.
+Section obligatoire
+La liste des personnes qui ont contribué (ainsi que leur affiliation) doit être indiquée.
+Format suggéré
+Tableau avec noms et affiliations. Si la liste de spécialistes est longue, ajouter un renvoi à une liste officielle de spécialistes incluse en annexe.
+Si la liste est courte, il est acceptable d'utiliser des points sommaires.
+
+
+Section obligatoire avec titre de section obligatoire.
 
 \begin{table}[H]
 \centering
@@ -8,18 +15,18 @@ Mandatory section and title.
 \toprule
 \textbf{Nom} & \textbf{Affiliation} \\
 \midrule
-Jaclyn Cleary & DFO Science, Pacific Region \\
-Matthew Grinnell & DFO Science, Pacific Region \\
-Allen Kronlund & DFO Science, National Capital Region \\
-Chris Grandin & DFO Science, Pacific Region \\
-Herring Technical Working Group & Various (contributions to First Nations observations) \\
-Roger Kanno & DFO Fisheries Management, Pacific Region (reviewer) \\
-Lesley MacDougall & DFO Centre for Science Advice, Pacific Region (editor) \\
+Jaclyn Cleary & MPO Sciences, R\'{e}gion du Pacifique\\
+Matthew Grinnell & MPO Sciences, R\'{e}gion du Pacifique \\
+Allen Kronlund & MPO Sciences, R\'{e}gion de la Capitale Nationale \\
+Chris Grandin & MPO Sciences, R\'{e}gion du Pacifique \\
+Groupe de Travail Technique sur le hareng & Vari\'{e}es (contributions aux observations des Premi\`{e}res Nations) \\
+Roger Kanno & MPO Gestion des ressources, R\'{e}gion du Pacifique (reviewer) \\
+Lesley MacDougall & MPO Centre des avis scientifiques, R\'{e}gion du Pacifique (\'{e}ditrice) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Note on this section}
+\subsection{Notes sur cette section}
 
 Contributors of the report (with their affiliation) must be identified.
 All participants (including reviewers, CSAP) are considered contributors.

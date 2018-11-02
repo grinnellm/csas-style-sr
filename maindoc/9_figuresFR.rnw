@@ -1,5 +1,5 @@
 \section{Figures}
 
-Optional section: figures can go in the main body.
-Make an example figure.
+Section optionnelle: les figures apparaissent habituellement dans le texte principal
+Exemple d'une figure.
 
