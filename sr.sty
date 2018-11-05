@@ -610,7 +610,9 @@
 
 %% ------------------------------------------------------------------------------
 %% Set up first page (header and footer)
+% \usepackage{afterpage}
 \fancypagestyle{firstPage}{%
+    % \newgeometry{footskip=35pt}
     \fancyhf{}
     \fancyhead{}
     \lhead{\includegraphics[width=9.2cm]{\locRepo/images/title-header.png}\\
@@ -620,6 +622,7 @@
     \textbf{Science Response \rdYear{}/\rdNumber{}}}
     \lfoot{\rdMonth{} \rdYear{}}
     \rfoot{\includegraphics[width=3.54cm]{\locRepo/images/title-footer.png}}
+    % \afterpage{\restoregeometry}
 }
 
 % Generate the first page
