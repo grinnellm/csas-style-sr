@@ -6,7 +6,7 @@ Optional section: figures can go in the main body, or an appendix.
 \begin{figure}[H]
 \centering
 % Note that the 'tooltip' is required for Web Accessibility (read out loud)
-\pdftooltip{\includegraphics[width=\linewidth]{\Sexpr{file.path(rootd.static.figs, "BC.png")}}}{Figure~\ref{figBC}}
+\pdftooltip{\includegraphics[width=0.75\linewidth]{\Sexpr{file.path(rootd.static.figs, "BC.png")}}}{Figure~\ref{figBC}}
 \caption{Boundaries for the \fishName{} stock assessment regions (SARs) in BC.
 The major SARs are \Sexpr{PasteNicely(allRegionNames$major)}.
 The minor SARs are \Sexpr{PasteNicely(allRegionNames$minor)}.
