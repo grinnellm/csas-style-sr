@@ -1,5 +1,18 @@
 \section{Figures}
 
-Section optionnelle: les figures apparaissent habituellement dans le texte principal
+Section optionnelle: les figures apparaissent habituellement dans le texte principal.
+
 Exemple d'une figure.
+
+% Map of BC
+\begin{figure}[H]
+\centering
+% Note that the 'tooltip' is required for Web Accessibility (read out loud)
+\pdftooltip{\includegraphics[width=0.75\linewidth]{\Sexpr{file.path(rootd.static.figs, "BC.png")}}}{Figure~\ref{figBC}}
+\caption{Fronti\`{e}res des r\'{e}gions d'\'{e}valuation (FRE) du \fishNameFr{} en Colombie-Britanique.
+Les FREs majeures sont \Sexpr{PasteNicely(allRegionNames$major)}.
+Les FREs mineures sont \Sexpr{PasteNicely(allRegionNames$minor)}.
+Unit\'{e}s: kilom\`{e}tres (km).}
+\label{figBC}
+\end{figure}
 
