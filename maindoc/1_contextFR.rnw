@@ -11,9 +11,16 @@ Toute autre publication découlant de cette réunion sera publiée, lorsqu’ell
 \subsection{Paragraphe obligatoire}
 
 
-\subsubsection{Exemple de citation}
+\subsubsection{Exemple de citation, de r\'{e}f\'{e}rence interne et d'une liste}
 
 Ceci est une \'{e}valuation de stock \citep{ricker1954}.
+Ceci sont les donn\'{e}es (\autoref{tabDataInput}), et notre aire d'\'{e}tude (\autoref{figBC}).
+Les donn\'{e}es ont trois composantes:
+\begin{resdoclist}
+\item Donn\'{e}es de captures,
+\item Donn\'{e}es biologiques, et
+\item Donn\'{e}es d'abondance.
+\end{resdoclist}
 
 
 

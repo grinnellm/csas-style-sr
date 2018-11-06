@@ -128,8 +128,8 @@ allRegionNames <- list(
 <<tables, child='maindoc/8_tablesFR.rnw'>>=
 @
 
-%<<figures, child='maindoc/9_figuresFR.rnw'>>=
-%@
+<<figures, child='maindoc/9_figuresFR.rnw'>>=
+@
 
 % Generate the availability section
 \MakeAvailable
