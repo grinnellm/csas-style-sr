@@ -9,4 +9,17 @@ Science Response Reports are intended to be short. References to more background
 
 \subsection{Description of the fishery}
 
-Optional section for stock status updates, title may vary.
+Optional section for stock status updates, title may vary. Example of a Table with its own footnote (Table \ref{tab:TAC}).
+
+\begin{table}[H]
+\caption{Total Allowable Catch in 2018.}
+\begin{tabular}{p{9.5cm}p{6cm}}
+\toprule
+Species and stock & Total Allowable Catch in 2018 \\
+\midrule
+\fishName{} (\scienceName{}) & XXX t $^{1}$ \\
+\bottomrule
+\multicolumn{2}{p{15.5cm}}{\footnotesize{1 To cover by-catch in other groundfish fisheries, a limited recreational fishery, for scientific purposes, and negotiated Aboriginal food, social and ceremonial fisheries agreements.}}
+\end{tabular}
+\label{tab:TAC}
+\end{table}
