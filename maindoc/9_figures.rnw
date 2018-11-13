@@ -6,7 +6,7 @@ Optional section: figures can go in the main body, or an appendix.
 \begin{figure}[H]
 \centering
 % Note that the 'tooltip' is required for Web Accessibility (read out loud)
-\pdftooltip{\includegraphics[width=0.75\linewidth]{\Sexpr{file.path(rootd.static.figs, "BC.png")}}}{Figure~\ref{figBC}}
+\pdftooltip{\includegraphics[width=0.75\linewidth]{\Sexpr{file.path(rootd.static.figs, ifelse(plotEng, "BC.png", "BC-FR.png"))}}}{Figure~\ref{figBC}}
 \caption{Boundaries for the \fishName{} stock assessment regions (SARs) in BC.
 The major SARs are \Sexpr{PasteNicely(allRegionNames$major)}.
 The minor SARs are \Sexpr{PasteNicely(allRegionNames$minor)}.
@@ -14,3 +14,14 @@ Units: kilometres (km).}
 \label{figBC}
 \end{figure}
 
+% Spawn index map
+\begin{figure}[H]
+\centering
+% Note that the 'tooltip' is required for Web Accessibility (read out loud)
+\pdftooltip{\includegraphics[width=\linewidth]{\Sexpr{file.path(rootd.figs, "SpawnIndex.png")}}}{Figure~\ref{figSpawnIndex}}
+\caption{Time series of spawn index in thousands of tonnes ($\text{t} \times 10^{3}$) for \fishName{} from \Sexpr{min(yrs)} to \Sexpr{max(yrs)} in the major stock assessment regions (SARs).
+\qPeriods{}
+\qVertical{}
+\spawnIndex{}}
+\label{figSpawnIndex}
+\end{figure}

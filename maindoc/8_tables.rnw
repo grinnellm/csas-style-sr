@@ -18,3 +18,13 @@ xInputData <- inputData %>%
 @
 \label{tabDataInput}
 \end{table}
+
+% Spawn index by region and survey
+\begin{table}[H]
+\centering
+\caption{Spawn index in thousands of tonnes ($\text{t} \times 10^{3}$) for \fishName{} by region and survey type.
+\spawnIndex{}
+\qPeriods{}}
+\inputsp{\Sexpr{file.path(rootd.tex, "MeanSpawn.tex")}}
+\label{tabMeanSpawn}
+\end{table}
