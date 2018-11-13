@@ -6,5 +6,6 @@
 \newcommand{\forecastYr}{2019}
 
 \newcommand{\spawnIndex}{The `spawn index' represents the raw survey data only, and is not scaled by the spawn survey scaling parameter, $q$.}
-
+\newcommand{\qPeriods}{The spawn index has two distinct periods defined by the dominant survey method: surface surveys (\Sexpr{qYrs$q1}), and dive surveys (\Sexpr{qYrs$q2}).}
+\newcommand{\qVertical}{The dashed vertical line is the boundary between these two periods.}
 \newcommand{\spawnIndexFr}{L'indice de reproduction représente les donn\'{e}es de relev\'{e} brutes seulement, et ne sont pas ajust\'{e}es par le param\`{e}tre d'ajustement de l'indice de reproduction, $q$.}
