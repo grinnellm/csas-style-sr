@@ -6,4 +6,18 @@ Section Facultative
 Lorsque nécessaire, cette section peut être utilisée pour ajouter des renseignements qui aideront le lecteur à comprendre la nature de l’enjeu (p. ex., information clé sur l’espèce, la population ou la zone, ou encore des détails sur les fondements utilisés pour répondre à la demande). Les réponses des Sciences sont par définition brèves. Des renvois à d’autres sources de renseignements peuvent être ajoutés dans la section Sources de renseignements.
 
 \subsection{Description de la p\^{e}che}
-Section facultative pour la mise à jour de l’état d’un stock, le titre peut varier.
+Section facultative pour la mise à jour de l’état d’un stock, le titre peut varier. Exemple d'une tableau avec sa propre note en bas de page (tableau \ref{tab:TAC}).
+
+\begin{table}[H]
+\caption{Total autoris\'{e} des captures en 2018.}
+\begin{tabular}{p{9.5cm}p{6cm}}
+\toprule
+Esp\`{e}ce et stock & Total autoris\'{e} des captures en 2018 \\
+\midrule
+\fishName{} (\scienceName{}) & XXX t $^{1}$ \\
+\bottomrule
+\multicolumn{2}{p{15.5cm}}{\footnotesize{1 Pour les prises accessoires dans le cadre de la pêche d'autres poissons de fond ; d'une pêche récréative limitée, des besoins scientifiques et des accords négociés pour les pêches autochtones à des fins alimentaires, sociales et rituelles.}}
+\end{tabular}
+\label{tab:TAC}
+\end{table}
+
