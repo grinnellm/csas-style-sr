@@ -7,4 +7,5 @@ del example*.blg
 del example*.tex
 del example*.toc
 del example*.upa
-rmdir /S /Q figure
+rmdir /S /Q /maindoc/knitr-cache-tex
+rmdir /S /Q /maindox/knitr-figs
