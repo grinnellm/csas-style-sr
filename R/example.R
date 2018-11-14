@@ -61,8 +61,8 @@ pDPI <- 600
 rootd <- here::here()
 rootd.data <- file.path( rootd, "data" )
 rootd.doc <- file.path( rootd, "maindoc" )
-rootd.figs <- file.path( rootd.doc, "knitr-figs" )
-rootd.tex <- file.path( rootd.doc, "knitr-cache-tex" )
+rootd.figs <- file.path( "knitr-figs" )
+rootd.tex <- file.path( "knitr-cache-tex" )
 rootd.static.figs <- file.path( rootd, "maindoc", "figures" )
 
 ##### Parameters #####
@@ -123,6 +123,15 @@ spIndex <- spIndex %>%
 # Create the required directories
 dir.create(rootd.figs, showWarnings = FALSE)
 dir.create(rootd.tex, showWarnings = FALSE)
+
+##### Main #####
+
+# Mean spawn index by region and survey type
+meanSpawn <- spIndex %>%
+  group_by( RegionName, Survey ) %>%
+  summarise( MeanIndex=mean(Index) ) %>%
+  ungroup( ) %>%
+  spread( Survey, MeanIndex )
 
 ##### Figures #####
 
@@ -194,33 +203,10 @@ qYrs <- list(
 
 ##### Tables #####
 
-# Mean spawn index by region and survey type
-CalcMeanSpawn <- function ( dat ) {
-  # Wrangle the data (english)
-  if( plotEng ) {
-    datMean <- dat %>%
-      group_by( RegionName, Survey ) %>%
-      summarise( MeanIndex=mean(Index) ) %>%
-      ungroup( ) %>%
-      spread( Survey, MeanIndex ) %>%
-      rename( Region=RegionName )
-  } else {  # End if english, otherwise french
-    datMean <- dat %>%
-      group_by( RegionNameFR, Releve ) %>%
-      summarise( MeanIndex=mean(Index) ) %>%
-      ungroup( ) %>%
-      spread( Releve, MeanIndex ) %>%
-      rename( Region=RegionNameFR )
-  }  # End if french
-  # Write the xtable
-  xDat <- datMean %>%
-    xtable( align=c("l", "l", "r", "r"), digits=c(0, 0, 1, 1) ) %>%
-    print( file=file.path(rootd.tex, "MeanSpawn.tex"), include.rownames=FALSE,
-      booktabs=TRUE, NA.string=NA, floating=FALSE,
-      sanitize.colnames.function=Bold2 )
-  # Return the data
-  return( datMean )
-}  # End CalcMeanSpawn function
-
-# Write mean spawn to a table
-meanSpawn <- CalcMeanSpawn( dat=spIndex )
+# Print mean spawn for latex
+xMeanSpawn <- meanSpawn %>%
+  rename( Region=RegionName ) %>%
+  xtable( align=c("l", "l", "r", "r"), digits=c(0, 0, 1, 1) ) %>%
+  print( file=file.path(rootd.tex, "MeanSpawn.tex"), include.rownames=FALSE,
+    booktabs=TRUE, NA.string=NA, floating=FALSE,
+    sanitize.colnames.function=Bold2 )
