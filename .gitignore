@@ -1,10 +1,13 @@
-# Temporary files
+# Temporary report files
+example*.aux
 example*.bbl
 example*.blg
 example*.log
 example*.pdf
 example*.tex
 example*.upa
+
+# R files
 .Rproj.user
 
 # Knitr cache
