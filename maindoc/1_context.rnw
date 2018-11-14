@@ -37,7 +37,9 @@ Input data has three main components:
 \begin{resdoclist}
 \item Catch data,
 \item Biological data, and
-\item Abundance data (\autoref{figSpawnIndex}).
+\item Abundance data (i.e., the spawn index; \autoref{figSpawnIndex}).
 \end{resdoclist}
-Abundance data is different in each region, and in the two survey periods (\autoref{tabMeanSpawn}).
+\spawnIndex{}
+\qPeriods{}
+The spawn index is generally higher in the dive survey period (\autoref{tabMeanSpawn}).
 
