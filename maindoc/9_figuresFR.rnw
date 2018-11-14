@@ -8,7 +8,7 @@ Exemple d'une figure.
 \begin{figure}[H]
 \centering
 % Note that the 'tooltip' is required for Web Accessibility (read out loud)
-\pdftooltip{\includegraphics[width=0.75\linewidth]{\Sexpr{file.path(rootd.static.figs, "BC.png")}}}{Figure~\ref{figBC}}
+\pdftooltip{\includegraphics[width=0.75\linewidth]{\Sexpr{file.path(rootd.static.figs, "BC-FR.png")}}}{Figure~\ref{figBC}}
 \caption{Fronti\`{e}res des r\'{e}gions d'\'{e}valuation (FRE) du \fishNameFr{} en Colombie-Britanique.
 Les FREs majeures sont \Sexpr{PasteNicely(allRegionNames$major)}.
 Les FREs mineures sont \Sexpr{PasteNicely(allRegionNames$minor)}.
@@ -16,3 +16,14 @@ Unit\'{e}s: kilom\`{e}tres (km).}
 \label{figBC}
 \end{figure}
 
+% Spawn index map
+\begin{figure}[H]
+\centering
+% Note that the 'tooltip' is required for Web Accessibility (read out loud)
+\pdftooltip{\includegraphics[width=\linewidth]{\Sexpr{file.path(rootd.figs, "SpawnIndex.png")}}}{Figure~\ref{figSpawnIndex}}
+\caption{S\'{e}ries temporelles de l'indice de reproduction en milliers de tonnes ($\text{t} \times 10^{3}$) pour \fishName{} de \Sexpr{min(yrs)} \`{a} \Sexpr{max(yrs)} dans Fronti\`{e}res des r\'{e}gions d'\'{e}valuation majeures (FREs) .
+\qPeriods{}
+\qVertical{}
+\spawnIndex{}}
+\label{figSpawnIndex}
+\end{figure}

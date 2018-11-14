@@ -1,5 +1,3 @@
-% TODO: Add example figures and tables.
-
 % Document setup
 \documentclass[11pt]{book}
 
@@ -22,6 +20,7 @@
 
 % Approval date (default to publication year and month)
 \newcommand{\rdAppDate}{\rdMonth{} 23, \rdYear{}}
+
 % Approver (name\\position)
 \newcommand{\rdApp}{Carmel Lowe\\Directrice r\'{e}gionale}
 
@@ -30,6 +29,7 @@
 
 % Region
 \newcommand{\rdRegion}{R\'{e}gion du Pacifique}
+
 % Address
 \newcommand{\rdAddress}{P\^{e}ches et Oc\'{e}ans Canada\\3190 Hammond Bay Road\\Nanaimo, BC V9T 6N7}
 
@@ -38,6 +38,7 @@
 
 % Email
 \newcommand{\rdEmail}{csap@dfo-mpo.gc.ca}
+
 % Title
 \newcommand{\rdTitle}{\'{E}valuation des stocks de \fishNameFr{} (\emph{\scienceName{}}) en \assessYr{} et pr\'{e}visions pour \forecastYr{}}
 
@@ -55,46 +56,10 @@
 %%%% First page %%%%%
 
 <<setup, warning=FALSE, echo=FALSE, message=FALSE>>=
-# Required package(s)
-library( knitr )
-library( xtable )
-library( tidyverse )
-library( here )
 
-# Bold and latex symbols
-Bold2 <- function(x) {paste('\\textbf{',sanitize(x, type="latex"),'}', sep ='')}
+# Run the example analysis
+source( file="R/example.R" )
 
-# Paste strings nicely
-PasteNicely <- function( x, intChars=", ", nChar="and " ) {
-  # Get the length of the vector
-  n <- length( x )
-  # If there are more than two
-  if( n > 2 ) {
-    # Make a print-friendly vector
-    x[n] <- paste( nChar, x[n], sep="" )
-    # Get print friendly values
-    res <- paste( x, collapse=intChars )
-  } else {  # End if more than two, otherwise
-    # Add a space
-    nCharSp <- paste( " ", nChar, sep="" )
-    # Get print friendly values
-    res <- paste( x, collapse=nCharSp )
-  }  # End if not more than two
-  # Return the results
-  return( res )
-}  # End PasteNicely function
-
-# Directories
-rootd <- here::here()
-rootd.data <- file.path(rootd, "data")
-rootd.static.figs <- file.path(rootd, "maindoc", "figures")
-
-# Region names by type
-allRegionNames <- list(
-  major=c("Haida Gwaii (HG)", "Prince Rupert District (PRD)",
-    "Central Coast (CC)", "Strait of Georgia (SoG)",
-    "West Coast of Vancouver Island (WCVI)"),
-  minor=c("Area 27 (A27)", "Area 2 West (A2W)") )
 @
 
 % More custom variables
