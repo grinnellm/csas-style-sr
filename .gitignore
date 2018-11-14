@@ -1,3 +1,4 @@
+# Temporary files
 example*.bbl
 example*.blg
 example*.log
@@ -5,3 +6,7 @@ example*.pdf
 example*.tex
 example*.upa
 .Rproj.user
+
+# Knitr cache
+/knitr-figs
+/knitr-cache-tex
