@@ -195,16 +195,32 @@ qYrs <- list(
 ##### Tables #####
 
 # Mean spawn index by region and survey type
-CalcMeanSpawn( dat ) {
-  spMean <- spIndex %>%
-    group_by( RegionName, Survey ) %>%
-    summarise( MeanIndex=mean(Index) ) %>%
-    ungroup( ) %>%
-    spread( Survey, MeanIndex ) %>%
-    rename( Region=RegionName ) %>%
+CalcMeanSpawn <- function ( dat ) {
+  # Wrangle the data (english)
+  if( plotEng ) {
+    datMean <- dat %>%
+      group_by( RegionName, Survey ) %>%
+      summarise( MeanIndex=mean(Index) ) %>%
+      ungroup( ) %>%
+      spread( Survey, MeanIndex ) %>%
+      rename( Region=RegionName )
+  } else {  # End if english, otherwise french
+    datMean <- dat %>%
+      group_by( RegionNameFR, Releve ) %>%
+      summarise( MeanIndex=mean(Index) ) %>%
+      ungroup( ) %>%
+      spread( Releve, MeanIndex ) %>%
+      rename( Region=RegionNameFR )
+  }  # End if french
+  # Write the xtable
+  xDat <- datMean %>%
     xtable( align=c("l", "l", "r", "r"), digits=c(0, 0, 1, 1) ) %>%
     print( file=file.path(rootd.tex, "MeanSpawn.tex"), include.rownames=FALSE,
       booktabs=TRUE, NA.string=NA, floating=FALSE,
       sanitize.colnames.function=Bold2 )
-
+  # Return the data
+  return( datMean )
 }  # End CalcMeanSpawn function
+
+# Write mean spawn to a table
+meanSpawn <- CalcMeanSpawn( dat=spIndex )
