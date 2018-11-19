@@ -26,7 +26,7 @@
 ##### Housekeeping #####
 
 # General options
-rm( list=ls( ) )      # Clear the workspace
+# rm( list=ls( ) )      # Clear the workspace
 sTime <- Sys.time( )  # Start the timer
 graphics.off( )       # Turn graphics off
 
@@ -51,8 +51,8 @@ UsePackages( pkgs=c("knitr", "tidyverse", "xtable", "here") )
 
 ##### Controls #####
 
-# Make english figures?
-plotEng <- TRUE
+# Make english figures (if they're not specified in 'example.rnw')
+if( !exists("plotEng") ) plotEng <- TRUE
 
 # Plot resolution (dpi)
 pDPI <- 600

@@ -57,6 +57,9 @@
 
 <<setup, warning=FALSE, echo=FALSE, message=FALSE>>=
 
+# Make English or French figures
+plotEng <- FALSE
+
 # Run the example analysis
 source( file="R/example.R" )
 
